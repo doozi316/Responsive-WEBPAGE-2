@@ -1,0 +1,462 @@
+/* ====================================================================
+						 		구글 웹 폰트
+=====================================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+
+
+/* ====================================================================
+						 		body
+=====================================================================*/
+
+body{
+	width: 100%;
+	background-color : #fff;
+	font-family : "돋움", "굴림", sans-serif;
+	color : #000;
+}
+
+a {
+	color: #000;
+	text-decoration : none; /* 밑줄 없음 */
+	
+}
+
+a:hover {
+	color: #333;
+	text-decoration: underline; /* 밑줄 */
+	
+}
+
+
+/* ====================================================================
+						 		header
+=====================================================================*/
+
+
+header{
+	text-align : center; /* 가운데 정렬 */
+}
+
+header h1{
+	margin : 0 auto;
+	padding : 15px 5px 7px 5px;
+	width : 90%;
+}
+
+header h1 img{
+	/* width : 100%; */
+	
+}
+
+header {
+	position : relative;
+	overflow : hidden;
+}
+
+
+header ul#s_nav {
+	margin-bottom : 15px;
+	position : relative;
+	left:50%;
+	float: left;	
+}
+
+header ul#s_nav li{
+	float : left;
+	position : relative;
+	left: -50%;
+}
+
+header ul#s_nav li a {
+   display: block;
+   font-size: 0.8em;
+   margin-right: 20px;
+   padding-left: 20px;
+}
+
+
+
+header ul#s_nav li.contact  {
+   background : url(../images/icon1.png) no-repeat left center;
+}
+header ul#s_nav li.news  {
+   background : url(../images/icon2.png) no-repeat left center;
+}
+
+header ul#s_nav li.sitemap  {
+   background : url(../images/icon3.png) no-repeat left center;
+}
+
+header p {
+	width: 100%;
+	
+}
+
+header p img{
+
+width: 100%;
+   height:auto;
+   max-widwth: 960px;
+}
+
+
+/* ====================================================================
+						 		글로벌 네비게이션 스타일
+=====================================================================*/
+
+
+nav ul {
+	margin-bottom : 15px;
+	
+}
+
+nav ul li{
+	text-align : center;
+	float: left;
+	width : 100%;/* 주 메뉴 부분 반응형으로 수정할 예정 */
+	border-bottom : 2px solid #000;
+}
+
+nav ul li a{
+	display : block;
+	width : 100%;
+}
+
+
+/* ====================================================================
+						 		컨텐츠 영역 전제 스타일
+=====================================================================*/
+
+
+div#contents {
+	background: url(../images/bg_footer.png) no-repeat bottom;
+}
+
+
+
+/* ====================================================================
+		`			 		컨텐츠 영역 -> news 스타일
+=====================================================================*/
+
+
+div#contents section#news {
+	margin-left : 5px;
+	
+}
+
+div#contents section#news h2{
+	margin:0 5px 15px 0;
+	background: url(../images/bg_headerling.png) repeat-x bottom;
+	padding-bottom : 10px;
+	
+}
+
+
+div#contents section#news article h3{
+	font-size : 0.7em;
+	background : url(../images/icn_arrow.png) no-repeat left center;
+	margin-bottom : 10px;
+	padding-left : 20px;
+}
+
+div#contents section#news article p{
+	margin-bottom: 15px;
+}
+
+
+#font1 {
+	font-family: 'Noto Serif KR', serif;
+}
+
+#font2 {
+	font-family: 'Frank Ruhl Libre', serif;
+}
+
+
+/* ====================================================================
+		`			 		컨텐츠 영역 -> information 스타일
+=====================================================================*/
+
+
+div#contents section#information {
+	margin-left : 5px;
+	text-align : center;
+}
+
+div#contents section#information h2{
+	margin:0 5px 15px 0;
+	background: url(../images/bg_headerling.png) repeat-x bottom;
+	padding-bottom : 10px;
+	text-align : left;
+	
+}
+
+div#contents section#information ul li{
+	width:100%;
+	margin-bottom : 5px;
+}
+
+div#contents section#information ul li img{
+	width:100%;
+	height : auto;
+	max-width : 470px; 
+}
+
+div#contents section#information ul li img:hover{
+
+	opacity : 0.5;
+}
+
+
+
+/* ====================================================================
+		`			 		페이지 상단으로 가는 버튼 스타일
+=====================================================================*/
+
+a#pagetopBtn img{
+	position : fixed; /* 고정된 위치에 있음 */
+	bottom : 10px;
+	right : 10px;
+}
+
+
+
+/* ====================================================================
+		`			 		푸터 스타일
+=====================================================================*/
+
+footer {
+	/* border-top : 10px solid #c0c0c0; 위치 확인용*/
+	
+}
+
+footer div {
+	margin : 20px 0 0 20px;
+}
+
+footer div p {
+	font-size: 0.7em;
+	line-height : 2.0em;
+}
+
+footer div small {
+	font-size : 0.6em;
+}
+
+
+
+/****************미디어쿼리 사용 ****************************/
+
+/* pc 대상 및 대형 태블릿 대상 레이아웃 지정 : ~510px */
+@media only screen and (max-width : 510px){ /* 510px 이하이면 스타일 적용 */
+
+	header{
+	position : static;
+	transition : all 1s;
+	}
+	
+	header h1{
+	transition : all 1s;
+	text-align: left;
+	padding : 15px 5px 7px 5px;
+	width : 150px;
+	float: left;
+	
+	}
+	
+	header h1 img{
+		width: 100%;
+		
+	}
+	
+	header ul#s_nav{
+	display : none; /* 숨김 */
+	
+	}
+	
+	header ul#s_nav li{
+	position : static;
+	}
+	
+	nav{
+	text-align: center;
+	margin : 10px auto 15px auto;
+	}
+	
+	nav ul li {
+	text-align : center;
+	float : left;
+	width : 99.9%; /* 1행에 1개씩 */
+	border-top : 1px solid #a3d1d1;
+	border-bottom : 1px solid #a3d1d1;
+	}
+	
+	div#contents{
+	max-width: 960px;
+	margin : 0 auto;
+	padding-bottom:60px;
+	}
+
+	
+		
+	}
+
+
+
+
+/* pc 대상 및 대형 태블릿 대상 레이아웃 지정 : 511px~ */
+@media only screen and (min-width : 511px){ /* 511px 이상이면 스타일 적용 */
+	header {
+		position : static;
+		overflow : visible;
+	}
+	
+	header h1 {
+		text-align: left;
+		padding : 15px 5px 7px 5px;	
+		width : 200px;
+		float: left;
+	}
+	
+	header h1 img{
+		width : 100%;
+	}
+	header ul#s_nav{
+		float : right;
+		margin-top : 20px;
+		position : static;
+		
+	}
+	
+	header ul#s_nav li{
+		float : left;
+		position: static;
+	}
+	
+	nav{
+		text-align : center;
+		margin : 10px auto 15px auto;
+		
+	}
+	
+	nav ul li{
+		text-align : center;
+		float : left;
+		width : 49.9%;
+		border-top : 1px solid #a3d1d1;
+		border-bottom : 1px solid #a3d1d1;
+	}
+	
+
+	
+}
+
+
+
+
+
+
+/* pc 대상 및 대형 태블릿 대상 레이아웃 지정 : 511~769px */
+@media only screen and (min-width : 770px){ /* 770px 이상이면 스타일 적용 */
+	header {
+		position : static;
+		overflow : visible;
+	}
+	
+	header h1 {
+		text-align: left;
+		padding : 15px 5px 7px 5px;	
+		width : 280px;
+		float: left;
+	}
+	
+	header h1 img{
+		width : 100%;
+	}
+	header ul#s_nav{
+		float : right;
+		margin-top : 20px;
+		position : static;
+		
+	}
+	
+	header ul#s_nav li{
+		float : left;
+		position: static;
+	}
+	
+	nav{
+		text-align : center;
+		margin : 10px auto 15px auto;
+		
+	}
+	
+	nav ul li{
+		text-align : center;
+		float : left;
+		width : 33.3%;
+		border-top : 1px solid #a3d1d1;
+		border-bottom : 1px solid #a3d1d1;
+	}
+	
+
+	
+}
+
+
+
+/* pc 대상 및 대형 태블릿 대상 레이아웃 지정 : 960px~ */
+@media only screen and (min-width : 960px){ /* 770px 이상이면 스타일 적용 */
+	header {
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+	header ul#s_nav{
+		float : right;
+		margin-top : 20px;
+		position : static;
+		
+	}
+	
+	
+	
+	nav{
+	max-width: 960px;
+		
+	}
+	
+	nav ul {
+	margin-left : auto;
+	margin-right: auto;}
+	
+	nav ul li{
+		text-align : center;
+		float : left;
+		width : 16.6%;
+		border-top : 1px solid #a3d1d1;
+		border-bottom : 1px solid #a3d1d1;
+	}
+	
+	div#contents{
+		max-width : 960px;
+		margin : 0 auto;
+		padding-bottom : 60px;
+		
+	}
+	
+	
+	div#contents section#news {
+	width : 49%;
+	float: left;}
+	
+	
+	div#contents section#information {
+	width : 49%;
+	float: right;}
+	
+}
